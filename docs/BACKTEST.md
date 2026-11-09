@@ -76,12 +76,21 @@ Cấu hình "đẹp nhất 2025" (E1 không đảo chiều +122k, SL 1×ATR +80k
 
 Mọi biến thể đều lãi ở cả hai năm (PF 1,07–1,22) → đây là một **vùng ổn định**, không phải một điểm may mắn.
 
+### Rủi ro 1% theo từng năm (v1.01)
+
+| Giai đoạn | Lãi | MaxDD | PF | Lệnh | E1 | E2 |
+|---|---|---|---|---|---|---|
+| 2025 | +110.769 | 23,0% | 1,095 | 1.582 | +59.646 | +51.122 |
+| 01–10/2026 | +65.043 | 27,2% | 1,092 | 1.246 | +42.912 | +22.131 |
+
+Mỗi năm bắt đầu lại từ 100k nên DD 2026 (27,2%) cao hơn DD của lượt chạy liền 22 tháng (25,5%).
+
 ### Chạy liền 22 tháng (01/2025 – 01/11/2026)
 
 | Cấu hình | Lãi | MaxDD | PF | Lệnh | Lot | Hoa hồng |
 |---|---|---|---|---|---|---|
-| **Mặc định, rủi ro 0,5%** | **+124.283** | **13,1%** | 1,109 | 3.129 | 4.234 | 29.636 |
-| Rủi ro 1% | +238.538 | 25,5% | 1,088 | 2.858 | 9.397 | 65.778 |
+| Rủi ro 0,5% (mặc định v1.00, preset an toàn v1.01) | +124.283 | 13,1% | 1,109 | 3.129 | 4.234 | 29.636 |
+| **Rủi ro 1% (mặc định từ v1.01)** | **+238.538** | **25,5%** | 1,088 | 2.858 | 9.397 | 65.778 |
 | Chỉ E1 gốc (không lọc H1) | +59.876 | 15,4% | 1,089 | 2.990 | 4.045 | 28.312 |
 
 Đóng góp trong 22 tháng (mặc định): E1 +78.672 (2.380 lệnh), E2 +45.611 (749 lệnh).
@@ -99,4 +108,4 @@ Mọi biến thể đều lãi ở cả hai năm (PF 1,07–1,22) → đây là 
 
 - Việc ghép E1 + E2 được quyết định sau khi đã thấy kết quả 2026 của vòng 2 → 2026 không còn là ngoài mẫu hoàn toàn.
 - Chưa có lọc tin tức (lịch MT5 không có dữ liệu trong tester; nghiên cứu cũ cho thấy tránh tin không thêm lãi).
-- Trượt giá thật khi tin mạnh có thể làm lỗ vượt 0,5%.
+- Trượt giá thật khi tin mạnh có thể làm lỗ một lệnh vượt mức rủi ro đã đặt (1%).

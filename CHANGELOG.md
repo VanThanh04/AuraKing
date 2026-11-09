@@ -1,5 +1,11 @@
 # Lịch sử phát triển AuraKing
 
+## v1.01 — 09/11/2026 · Rủi ro mặc định 1%
+
+- `InpRiskPct` mặc định 0,5 → **1,0**. Logic giao dịch không đổi.
+- Preset mới: `AuraKing_v101_macdinh.set` (1%) và `AuraKing_v101_an_toan_0_5pct.set` (0,5%); bỏ hai preset v1.00.
+- Kiểm tra lại real-tick: 2025 +110.769 @ DD 23,0% · 01–10/2026 +65.043 @ DD 27,2% · 22 tháng +238.538 @ DD 25,5%.
+
 ## v1.00 — 09/11/2026 · Bản đầu tiên
 
 - EA lệnh đơn XAUUSD: mỗi tín hiệu 1 lệnh có SL thật trên server, lot theo % rủi ro số dư, không DCA/martingale.

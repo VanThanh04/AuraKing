@@ -6,14 +6,14 @@
 //|   dong co dung magic rieng (InpMagic + so dong co).               |
 //+------------------------------------------------------------------+
 #property copyright "AuraKing"
-#property version   "1.00"
+#property version   "1.01"
 #property description "EA lenh don XAUUSD: SL that, lot theo % rui ro, 5 dong co tin hieu."
 
 #include <Trade\Trade.mqh>
 #include <AuraKingSignals.mqh>
 
 input group "=== AuraKing: RUI RO ==="
-input double InpRiskPct      = 0.5;    // % so du chiu lo moi lenh khi cham SL
+input double InpRiskPct      = 1.0;    // % so du chiu lo moi lenh khi cham SL
 input double InpMaxLot       = 5.0;    // Tran lot moi lenh
 input long   InpMagic        = 20261100; // Magic goc (dong co e dung InpMagic + e)
 input bool   InpOnePosGlobal = true;   // true: ca bot chi 1 lenh mo | false: moi dong co toi da 1 lenh
@@ -351,7 +351,7 @@ void OnTick()
       if(sig != 0) HandleSignal(e, sig);
    }
    if(InpShowStatus && !MQLInfoInteger(MQL_TESTER))
-      Comment(StringFormat("AuraKing v1.00 | dong co: %s | rui ro %.2f%% | lenh mo: %d | %s",
+      Comment(StringFormat("AuraKing v1.01 | dong co: %s | rui ro %.2f%% | lenh mo: %d | %s",
                            InpEngines, InpRiskPct, OurPositions(), g_status));
 }
 
